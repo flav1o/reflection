@@ -1,0 +1,74 @@
+[
+    {
+        "eventId": "f3812179-a2eb-44c6-b477-d74c7cfb3a45",
+        "event": "Search 'Dog Toys'",
+        "location": "EXPLORER",
+        "sessionId": "e2516ac2-f627-47e0-9dd0-4769cf94be5b",
+        "agent": "BROWSER",
+        "user": "5f4dce8c-7b8b-4d2b-9f2b-eb6b9e546014",
+        "createdAt": "2020-10-10T20:00:00.000Z"
+    },
+    {
+        "eventId": "e2c96125-3e9b-4747-84b8-c7c5cbe0209e",
+        "event": "Open Item",
+        "location": "EXPLORER",
+        "sessionId": "5a7fa7e8-0c02-43b9-a9c7-1b394c34b39f",
+        "agent": "BROWSER",
+        "user": "7e8341f9-9e7b-4a1a-8803-d3dc0f85d857",
+        "createdAt": "2020-10-10T20:05:00.000Z"
+    },
+    {
+        "eventId": "723a3b6b-539c-47cb-af8a-4867a202afce",
+        "event": "Changes Item Color",
+        "location": "CATALOG_ITEM",
+        "sessionId": "318c6207-6f24-4820-9579-9839cb9f7b1c",
+        "agent": "BROWSER",
+        "user": "034c29b2-e2e9-4d01-af5c-12c871413d5a",
+        "createdAt": "2020-10-10T20:15:00.000Z"
+    },
+    {
+        "eventId": "8e1bcb8b-eab3-4257-9062-77c774f929c5",
+        "event": "Add to basket",
+        "location": "CATALOG_ITEM",
+        "sessionId": "b81949b1-0e4c-4dd2-a47e-fa9c1f032b8a",
+        "agent": "BROWSER",
+        "user": "cdaaa09f-04d9-447f-9a8f-dc04a77bae01",
+        "createdAt": "2020-10-10T20:20:00.000Z"
+    },
+    {
+        "eventId": "8c6be3f4-bd94-4e98-bf1e-19bcc793bcb7",
+        "event": "Clicks go to Cart",
+        "location": "CATALOG_ITEM",
+        "sessionId": "ce61f36a-5e5e-4b1b-bc07-35a3e3cdeaf6",
+        "agent": "BROWSER",
+        "user": "b4af42c6-11a6-4c3f-9a8a-19a7b0c0e950",
+        "createdAt": "2020-10-10T20:35:00.000Z"
+    },
+    {
+        "eventId": "a5ccdac4-7c39-49b3-992c-f361995b47a9",
+        "event": "Adds new address",
+        "location": "CHECKOUT",
+        "sessionId": "1c3d138b-3e3f-4b04-94e2-1f2e9d8c4b4a",
+        "agent": "BROWSER",
+        "user": "15311d5b-4cc9-4e61-8b1e-0b86492fc3d3",
+        "createdAt": "2020-10-10T20:40:00.000Z"
+    },
+    {
+        "eventId":"1ad86bb4-f4e4-4b64-bf4d-d132b24b63f6",
+        "event": "Select Paypal",
+        "location": "CHECKOUT",
+        "sessionId": "e4d57f7b-8a5d-4ea9-9d9e-809fb8f90a20",
+        "agent": "BROWSER",
+        "user": "2a7abce6-4649-4498-b8a3-60ca0231c293",
+        "createdAt": "2020-10-10T20:50:00.000Z"
+    },
+    {
+        "eventId":"bf015ac3-93ea-4558-913a-95626f43903d",
+        "event": "Payment Succeeds",
+        "location": "CHECKOUT",
+        "sessionId": "ca0371d2-60c7-471e-b35f-8350f0d3d3b3",
+        "agent": "BROWSER",
+        "user": "6a01f8af-7e06-4d9e-9b10-c8eb2e4d08ad",
+        "createdAt": "2020-10-10T21:00:00.000Z"
+    }
+]
