@@ -21,7 +21,7 @@ const NativeButton = styled.button`
 
   &:hover {
     background-color: ${primary[90]};
-    color: ${background.light[90]};
+    color: ${background[90]};
   }
 `;
 

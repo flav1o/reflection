@@ -1,17 +1,33 @@
 import React, { FC } from "react";
 import S from "./MetricCard.styles";
 import { PropTypes } from "./MetricCard.types";
-import { Typography } from "@/components";
-import { TypographyVariant } from "@/components/typography/Typography.types";
+import { MetricCardSkeleton, Typography } from "@/components";
+import {
+  TypographyVariant,
+  TypographyWeight,
+} from "@/components/typography/Typography.types";
 
-const MetricCard: FC<PropTypes> = ({ metricValue, metricName, component }) => {
+const MetricCard: FC<PropTypes> = ({
+  metricValue,
+  metricName,
+  component,
+  isLoading,
+}) => {
+  if (isLoading) {
+    return <MetricCardSkeleton />;
+  }
+
   return (
     <S.Card>
       <div>
-        <Typography variant={TypographyVariant.H4}>{metricValue}</Typography>
-        <Typography variant={TypographyVariant.SPAN}>{metricName}</Typography>
+        <Typography
+          variant={TypographyVariant.H1}
+          weight={TypographyWeight.SEMI_BOLD}
+          content={metricValue}
+        />
+        <Typography variant={TypographyVariant.SPAN} content={metricName} />
       </div>
-      <div>{component}</div>
+      <div style={{ width: "100%" }}> {component}</div>
     </S.Card>
   );
 };

@@ -4,4 +4,5 @@ export interface PropTypes {
   metricValue: number | string;
   metricName: string;
   component: ReactNode;
+  isLoading?: boolean;
 }

@@ -28,23 +28,22 @@ const DUMMY = [
 
 const NewSessionsChart = () => {
   return (
-    <>
-      <Chart
-        chartType="ColumnChart"
-        data={DUMMY}
-        options={{
-          ...NO_LEGEND,
-          ...NO_AXIS,
-          ...FULL_AREA_CHART,
-          ...NO_BOTTOM_LINE,
-          bar: { groupWidth: "40%" },
-        }}
-        style={{
-          width: "100%",
-          height: "10vh",
-        }}
-      />
-    </>
+    <Chart
+      chartType="ColumnChart"
+      data={DUMMY}
+      options={{
+        ...NO_LEGEND,
+        ...NO_AXIS,
+        ...FULL_AREA_CHART,
+        ...NO_BOTTOM_LINE,
+        bar: { groupWidth: "40%" },
+        enableRegionInteractivity: true,
+      }}
+      style={{
+        width: "100%",
+        height: "10vh",
+      }}
+    />
   );
 };
 

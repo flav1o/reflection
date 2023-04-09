@@ -19,7 +19,7 @@ const GridItem = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: ${background.light[90]};
+  background-color: ${background[90]};
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
   border-radius: 5px;
   padding: 0vh 1vw;

@@ -2,6 +2,10 @@ import { UserAnalytics, SessionTracker } from "@/views";
 
 const ROUTES = [
   {
+    path: "/",
+    element: <UserAnalytics />,
+  },
+  {
     path: "/session-tracker/:id",
     element: <SessionTracker />,
   },

@@ -1,2 +1,2 @@
 export * from "./SessionTracker";
-export * from "./UserAnalytics";
+export * from "./user-analytics/UserAnalytics";

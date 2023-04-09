@@ -11,7 +11,7 @@ interface IGenSession {
 
 const NodeHelper = {
   genSession: function (session?: Measurable[]): IGenSession {
-    const dummy: Measurable[] = session || DUMMY_DATA;
+    const dummy: any[] = session || DUMMY_DATA;
     const lastNodeIndex = dummy.length - 1;
 
     const nodes: Node[] = dummy.map((item, index: number) => {

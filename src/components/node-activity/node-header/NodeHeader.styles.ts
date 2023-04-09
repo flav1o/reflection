@@ -14,7 +14,7 @@ const HeaderContainer = styled("div")<{ isFlagged: boolean }>`
   border-radius: 5px;
   font-size: 0.8rem;
   background-color: ${({ isFlagged }) =>
-    isFlagged ? danger[10] : background.light[90]};
+    isFlagged ? danger[10] : background[90]};
 `;
 
 const HeaderSpan = styled.span`
@@ -25,7 +25,7 @@ const HeaderSpan = styled.span`
   color: ${palette.primary[90]};
 
   &:active {
-    color: ${palette.primary[40]};
+    color: ${palette.primary[90]};
   }
 
   &:after {
@@ -41,7 +41,7 @@ const HeaderSpan = styled.span`
   }
 
   &:active:after {
-    background-color: ${palette.primary[40]};
+    background-color: ${palette.primary[60]};
   }
 `;
 

@@ -2,8 +2,9 @@ import { ReactNode } from "react";
 
 export interface PropTypes {
   variant: TypographyVariant;
-  weight?: TypographyWeight;
-  children: ReactNode;
+  weight?: TypographyWeight | number;
+  color?: string;
+  content?: ReactNode;
 }
 
 export enum TypographyVariant {
@@ -18,10 +19,15 @@ export enum TypographyVariant {
 }
 
 export enum TypographyWeight {
+  THIN = 100,
+  EXTRA_LIGHT = 200,
   LIGHT = 300,
   REGULAR = 400,
   MEDIUM = 500,
+  SEMI_BOLD = 600,
   BOLD = 700,
+  EXTRA_BOLD = 800,
+  BLACK = 900,
 }
 
 export const TypographySizes = {

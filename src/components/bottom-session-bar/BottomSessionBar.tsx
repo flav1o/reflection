@@ -16,9 +16,10 @@ const BottomSessionBar: FC<PropTypes> = ({
       <S.GridItem>
         <S.UserWrapper>
           <FaUserAstronaut />
-          <Typography variant={TypographyVariant.SMALL}>
-            {userIdentifier}
-          </Typography>
+          <Typography
+            variant={TypographyVariant.SMALL}
+            content={userIdentifier}
+          />
         </S.UserWrapper>
         <S.BanIconWrapper>
           <ImHammer2 size={20} onClick={() => console.log("hello")} />
@@ -26,9 +27,10 @@ const BottomSessionBar: FC<PropTypes> = ({
       </S.GridItem>
       <S.GridItem>
         <GiHourglass />
-        <Typography variant={TypographyVariant.SMALL}>
-          {sessionDurationInMinutes} min
-        </Typography>
+        <Typography
+          variant={TypographyVariant.SMALL}
+          content={`${sessionDurationInMinutes} min`}
+        />
       </S.GridItem>
     </S.BottomSessionWrapper>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { palette } from "@/core/theme";
 import Chart from "react-google-charts";
 
 export const data = [
@@ -8,7 +9,19 @@ export const data = [
 ];
 
 const GeographicalChart = () => {
-  return <Chart chartType="GeoChart" data={data} width="100%" height="100%" />;
+  const { background } = palette;
+
+  return (
+    <Chart
+      chartType="GeoChart"
+      data={data}
+      options={{
+        backgroundColor: background[90],
+      }}
+      height="100%"
+      width="100%"
+    />
+  );
 };
 
 export { GeographicalChart };
