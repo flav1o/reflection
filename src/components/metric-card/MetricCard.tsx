@@ -19,15 +19,15 @@ const MetricCard: FC<PropTypes> = ({
 
   return (
     <S.Card>
-      <div>
+      <S.Content>
         <Typography
           variant={TypographyVariant.H1}
           weight={TypographyWeight.SEMI_BOLD}
           content={metricValue}
         />
         <Typography variant={TypographyVariant.SPAN} content={metricName} />
-      </div>
-      <div style={{ width: "100%" }}> {component}</div>
+      </S.Content>
+      <S.Component>{component}</S.Component>
     </S.Card>
   );
 };

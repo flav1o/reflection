@@ -20,8 +20,10 @@ const GridItem = styled.div`
   align-items: center;
   justify-content: space-between;
   background-color: ${background[90]};
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.04));
   border-radius: 5px;
+
+  border-radius: 15px;
   padding: 0vh 1vw;
 `;
 

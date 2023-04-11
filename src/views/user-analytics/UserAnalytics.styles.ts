@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import S from "../../components/container/Container.styles";
 
 const GeoChartWrapper = styled(S.Container)`
-  width: 50vw;
+  width: 45vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

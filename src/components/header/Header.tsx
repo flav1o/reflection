@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import S from "./Header.styles";
-import { Main, Typography } from "@/components";
+import { Main, RangeDatePicker, Typography } from "@/components";
 import {
   TypographyVariant,
   TypographyWeight,
 } from "@/components/typography/Typography.types";
 
+import "react-dates/initialize";
+import "react-dates/lib/css/_datepicker.css";
+
 const Header = () => {
   return (
-    <Main>
+    <Main style={{ paddingBottom: "0vh" }}>
       <S.HeaderWrapper>
         <span>
           <Typography
@@ -18,12 +21,14 @@ const Header = () => {
           />
           <Typography
             variant={TypographyVariant.PARAGRAPH}
-            weight={TypographyWeight.MEDIUM}
+            weight={TypographyWeight.REGULAR}
             color="#A3A3A3"
             content="Simplified user data visualization"
           />
         </span>
-        asd
+        <S.DatePickerWrapper>
+          <RangeDatePicker />
+        </S.DatePickerWrapper>
       </S.HeaderWrapper>
     </Main>
   );

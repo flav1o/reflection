@@ -25,7 +25,7 @@ const UserAnalytics = () => {
         ))}
       </DraggableContainer>
 
-      <S.GeoChartWrapper>
+      <S.GeoChartWrapper style={{ marginTop: "5vh" }}>
         <GeographicalChart />
       </S.GeoChartWrapper>
     </Main>

@@ -6,7 +6,7 @@ const { background } = palette;
 const Container = styled.div`
   background-color: ${background[90]};
   border: 1px solid #e5e5e5;
-  border-radius: 5px;
+  border-radius: 15px;
 `;
 
 export default { Container };

@@ -11,7 +11,7 @@ const HeaderContainer = styled("div")<{ isFlagged: boolean }>`
   align-items: center;
   justify-content: center;
   border: 1px solid ${({ color }) => color || "#2B9EB3"};
-  border-radius: 5px;
+  border-radius: 15px;
   font-size: 0.8rem;
   background-color: ${({ isFlagged }) =>
     isFlagged ? danger[10] : background[90]};

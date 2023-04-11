@@ -11,3 +11,4 @@ export * from "./metric-card/MetricCard.skeleton";
 export * from "./skeleton/Skeleton";
 export * from "./container/Container";
 export * from "./header/Header";
+export * from "./date-range-picker/DateRangePicker";

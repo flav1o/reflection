@@ -3,9 +3,11 @@ import { palette } from "@/core/theme";
 
 const { background } = palette;
 
-const MainWrapper = styled.main`
+const MainWrapper = styled("div")<{
+  disablePadding?: boolean;
+}>`
   background-color: ${background[60]};
-  padding: 2vw;
+  padding: ${(props) => (props?.disablePadding ? "0vw" : "2vw")};
 `;
 
 export default { MainWrapper };

@@ -9,4 +9,7 @@ export default defineConfig({
       measurables: "/src/types/measurables.d.ts",
     },
   },
+  define: {
+    global: {},
+  },
 });

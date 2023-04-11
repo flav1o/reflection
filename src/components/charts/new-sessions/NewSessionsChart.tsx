@@ -1,50 +1,29 @@
-import React from "react";
-import Chart from "react-google-charts";
-import {
-  FULL_AREA_CHART,
-  NO_AXIS,
-  NO_BOTTOM_LINE,
-  NO_LEGEND,
-} from "@/constants";
+import React, { useCallback } from "react";
 import { palette } from "@/core/theme";
-
-const { primary } = palette;
-
-const DUMMY = [
-  ["Duration", "07:00 - 08:00", { role: "style" }],
-  ["", 1000, primary[40]],
-  ["", 1170, primary[40]],
-  ["", 640, primary[40]],
-  ["", 1030, primary[40]],
-  ["", 1000, primary[40]],
-  ["", 1170, primary[40]],
-  ["", 640, primary[40]],
-  ["", 1030, primary[40]],
-  ["", 1030, primary[40]],
-  ["", 110, primary[40]],
-  ["", 100, primary[40]],
-  ["", 1020, primary[40]],
-];
+import S from "./NewSessionsChart.styles";
+import { options } from "./NewSessionsChart.config";
+import { getTodayPreviousWeekDays } from "@/common/utils";
 
 const NewSessionsChart = () => {
-  return (
-    <Chart
-      chartType="ColumnChart"
-      data={DUMMY}
-      options={{
-        ...NO_LEGEND,
-        ...NO_AXIS,
-        ...FULL_AREA_CHART,
-        ...NO_BOTTOM_LINE,
-        bar: { groupWidth: "40%" },
-        enableRegionInteractivity: true,
-      }}
-      style={{
-        width: "100%",
-        height: "10vh",
-      }}
-    />
+  const { primary } = palette;
+  const labels = getTodayPreviousWeekDays();
+
+  const genDataSet = useCallback(
+    () => ({
+      labels,
+      datasets: [
+        {
+          data: [10, 8, 3, 10, 8, 13, 14],
+          borderColor: primary[60],
+          backgroundColor: primary[90],
+          fill: "origin",
+        },
+      ],
+    }),
+    []
   );
+
+  return <S.NewSessionChart options={options} data={genDataSet()} />;
 };
 
 export { NewSessionsChart };
